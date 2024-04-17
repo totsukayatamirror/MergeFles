@@ -45,8 +45,8 @@ public class MergeFiles {
 
 
     public static void main(String[] args) {
-        String[] file1Words = readWordsFromFile("C:\\Users\\akonz\\eclipse-workspace\\MergeFiles_OdunaAkonzee_052223_pd4\\src\\merge\\abc_A.cvhs.txt");
-        String[] file2Words = readWordsFromFile("C:\\Users\\akonz\\eclipse-workspace\\MergeFiles_OdunaAkonzee_052223_pd4\\src\\merge\\abc_B.cvhs.txt");
+        String[] file1Words = readWordsFromFile("");
+        String[] file2Words = readWordsFromFile("");
 
 
         String[] allWords = new String[file1Words.length + file2Words.length];
@@ -58,8 +58,8 @@ public class MergeFiles {
         merge.alphabetizedWords();
 
 
-        // Write the array to a new file called abc_C.cvhs
-        try (FileWriter writer = new FileWriter("C:\\Users\\akonz\\eclipse-workspace\\MergeFiles_OdunaAkonzee_052223_pd4\\src\\merge\\abc_C.cvhs.txt")) {
+        
+        try (FileWriter writer = new FileWriter("")) {
             for (String word : allWords) {
                 writer.write(word + "\n");
             }
